@@ -1,165 +1,96 @@
-\#
+# January 25 2018
 
-January 25 2018
+## Threads, SMP, and Microkernals
 
-  
+#### Multithreading
 
+* OS supports multiple thread execution in a single process
 
-\#\#
+### Processes vs Threads
 
-Threads, SMP, and Microkernals
+* Processes: \(The room analogy\)
 
-  
+* Have virtual address space which holds the process image
 
+* Processes own threads
 
-\#\#\#\#
+* Threads: \(Roomate analogy\)
 
-Multithreading
+* Threads cannot exist without a process
 
-- OS supports multiple thread execution in a single process
+* All thread share memory within a process
 
-  
+* Has a saved thread context when not executing
 
+### Benefits of Threads:
 
-\#\#\#
+* Takes less time to create a new thread than a proces
 
-Processes vs Threads
+* Kernal not involved to allocate resources =&gt; 10x faster
 
-- Processes: \(The room analogy\)
+* Takes less time to terminate a thread than a process
 
-- Have virtual address space which holds the process image
+* Kernal not involved to release resources
 
-- Processes own threads
+* Faster the switch between threads
 
-  
+* More efficient communication
 
-
-- Threads: \(Roomate analogy\)
-
-- Threads cannot exist without a process
-
-- All thread share memory within a process
-
-- Has a saved thread context when not executing
-
-  
-
-
-\#\#\#
-
-Benefits of Threads:
-
-- Takes less time to create a new thread than a proces
-
-- Kernal not involved to allocate resources =
-
-&gt;
-
- 10x faster
-
-- Takes less time to terminate a thread than a process
-
-- Kernal not involved to release resources
-
-- Faster the switch between threads
-
-- More efficient communication
-
-- Threads within a process share memory
+* Threads within a process share memory
 
 ---
 
-  
+### Thread uses in MultiProcessing System \(Single User\)
 
+* Async processing
 
-\#\#\#
+* Speed of execution
 
-Thread uses in MultiProcessing System \(Single User\)
+* Multiple threads on multiple CPU/cores, I/O blocking handled
 
-- Async processing
+* Modular programming structure
 
-- Speed of execution
+### Thread behaviour in a Process
 
-- Multiple threads on multiple CPU/cores, I/O blocking handled
-
-- Modular programming structure
-
-  
-
-
-\#\#\#
-
-Thread behaviour in a Process
-
-- Suspending a process suspends all threads in a process because they share the same address space
+* Suspending a process suspends all threads in a process because they share the same address space
 
 ---
 
-\#\#
+## Kernal level threads vs User-level threads
 
-Kernal level threads vs User-level threads
+### User-level threads
 
-  
+* Application handles all the threads
 
+* Uses application threading library
 
-\#\#\#
-
-User-level threads
-
-  
-
-
-- Application handles all the threads
-
-- Uses application threading library
-
-- Kernal schedules processes
-
-  
-
+* Kernal schedules processes
 
 Advantages:
 
-- Can run on any OS, even if the OS does not support threads
+* Can run on any OS, even if the OS does not support threads
 
-- Less switching overhead \(save 2 mode switches\)
-
-  
-
+* Less switching overhead \(save 2 mode switches\)
 
 Disadvantages:
 
-- Reliant on the OS to integrate threads efficiently
+* Reliant on the OS to integrate threads efficiently
 
-  
+### Kernal-level threads
 
+* Kernal knows context of the threads
 
-\#\#\#
-
-Kernal-level threads
-
-- Kernal knows context of the threads
-
-- Kernal schedules the threads
-
-  
-
+* Kernal schedules the threads
 
 Advantages:
 
-- Only blocks a single thread
+* Only blocks a single thread
 
-- Can schedule threads simultaneously on multiple processors
-
-  
-
+* Can schedule threads simultaneously on multiple processors
 
 Disadvantages:
 
-- Must rely on the kernal's scheduling algorithm
-
-  
-
+* Must rely on the kernal's scheduling algorithm
 
 
 
