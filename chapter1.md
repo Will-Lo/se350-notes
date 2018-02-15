@@ -1,3 +1,165 @@
-# First Chapter
+\#
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+January 25 2018
+
+  
+
+
+\#\#
+
+Threads, SMP, and Microkernals
+
+  
+
+
+\#\#\#\#
+
+Multithreading
+
+- OS supports multiple thread execution in a single process
+
+  
+
+
+\#\#\#
+
+Processes vs Threads
+
+- Processes: \(The room analogy\)
+
+- Have virtual address space which holds the process image
+
+- Processes own threads
+
+  
+
+
+- Threads: \(Roomate analogy\)
+
+- Threads cannot exist without a process
+
+- All thread share memory within a process
+
+- Has a saved thread context when not executing
+
+  
+
+
+\#\#\#
+
+Benefits of Threads:
+
+- Takes less time to create a new thread than a proces
+
+- Kernal not involved to allocate resources =
+
+&gt;
+
+ 10x faster
+
+- Takes less time to terminate a thread than a process
+
+- Kernal not involved to release resources
+
+- Faster the switch between threads
+
+- More efficient communication
+
+- Threads within a process share memory
+
+---
+
+  
+
+
+\#\#\#
+
+Thread uses in MultiProcessing System \(Single User\)
+
+- Async processing
+
+- Speed of execution
+
+- Multiple threads on multiple CPU/cores, I/O blocking handled
+
+- Modular programming structure
+
+  
+
+
+\#\#\#
+
+Thread behaviour in a Process
+
+- Suspending a process suspends all threads in a process because they share the same address space
+
+---
+
+\#\#
+
+Kernal level threads vs User-level threads
+
+  
+
+
+\#\#\#
+
+User-level threads
+
+  
+
+
+- Application handles all the threads
+
+- Uses application threading library
+
+- Kernal schedules processes
+
+  
+
+
+Advantages:
+
+- Can run on any OS, even if the OS does not support threads
+
+- Less switching overhead \(save 2 mode switches\)
+
+  
+
+
+Disadvantages:
+
+- Reliant on the OS to integrate threads efficiently
+
+  
+
+
+\#\#\#
+
+Kernal-level threads
+
+- Kernal knows context of the threads
+
+- Kernal schedules the threads
+
+  
+
+
+Advantages:
+
+- Only blocks a single thread
+
+- Can schedule threads simultaneously on multiple processors
+
+  
+
+
+Disadvantages:
+
+- Must rely on the kernal's scheduling algorithm
+
+  
+
+
+
+
