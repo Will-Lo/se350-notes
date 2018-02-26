@@ -6,7 +6,7 @@
 4. Feb 6th
 5. [Feb 8th](/notes/feb8-18.md)
 6. [Feb 13th](/notes/feb13-18.md)
-7. Feb 15th
+7. [Feb 15th](/notes/feb15-18.md)
 
 
 
