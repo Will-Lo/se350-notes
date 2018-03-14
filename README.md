@@ -1,7 +1,7 @@
 # Notes for SE350 \(in progress\)
 
-1. [January 23rd](/jan23-18.md)
-2. [January 25th](/jan25-18.md)
+1. [January 23rd](/notes/jan23-18.md)
+2. [January 25th](/notes/jan25-18.md)
 3. [January 30th](/notes/jan30-18.md)
 4. [Feb 1st](/notes/feb1-18.md)
 5. Feb 6th
