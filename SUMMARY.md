@@ -11,5 +11,6 @@
 9. [Feb 27th](/notes/feb27-18.md)
 11. [Mar 1st](/notes/mar1-18.md)
 12. [Mar 6th](/notes/mar6-18.md)
-13. [Mar 13th](/notes/mar13-18.md)
+13. [Mar 8th] (/notes/mar8-18.md)
+14. [Mar 13th](/notes/mar13-18.md)
 
