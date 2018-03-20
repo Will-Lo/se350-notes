@@ -56,3 +56,54 @@
 - OS views multiple physical disk drives as a single logical drive 
 - Allows for recovery as redundant disk capacity stores parity information
 
+#### RAID Level 0
+- Not true RAID
+- Transfers data quickly
+- Not as reliable
+
+#### RAID Level 1
+- Get redundancy by duplicating write data
+- **Pros**:
+    - writes can be done in parallel
+    - reads can be serviced by either disk
+    - easy to restore
+- **Cons**:
+    - double cost of writing
+    - both disks fail -> cannot restore
+
+#### RAID Level 2
+- All disks participate on disk transfers, with synchronized spindles
+- 
+- Overkill
+
+#### RAID Level 3
+- Similar to RAID Level 2 
+
+#### RAID Level 4
+- **Pros**:
+    - Only 1 disk can fail at a time
+- **Cons**:
+    - Every write must always write to the
+    
+#### RAID Level 5
+- Most common nowadays
+- Split parity bits among disks to increase redundancy
+
+
+#### RAID Level 6
+- Increase # of parity blocks, even more redundancy
+- Can handle dual failures
+
+---
+
+## File Systems
+- Typical operations
+    - Create
+    - Read
+    - Open
+    - Close
+    - Write
+
+- **Field**: basic single value element of data
+- **Record**: Collection of fields
+
