@@ -41,6 +41,6 @@
 - **Cons**:
     - Slower than SCAN
 #### N-step-SCAN
-- Optimizes SCAN and C-SCAN
+- Optimizes SCAN
 - Segments disk request queue into subqueues of length N
 - Processes subqueues using SCAN
