@@ -53,4 +53,6 @@
 
 ### RAID (Redundant Array of Independent Disks)
 - Organize data which redundancy can be added to improve reliability
-- Allows for recovery 
+- OS views multiple physical disk drives as a single logical drive 
+- Allows for recovery as redundant disk capacity stores parity information
+
