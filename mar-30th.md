@@ -110,4 +110,14 @@
 - **File**: Collection of similar records, single entity
 - **Database**: Collection of related data with relationship among elements
 
+### File Management System (FMS)
+- Sole interface for users and applications to access files
+- **Goals:**
+    - Meet data management needs and requirements for user
+    - Guarantee file data is valid
+    - Optimize performance
+    - Provide I/O support
+    - Minimize potential for lost/destroyed data
+    
+ 
 
