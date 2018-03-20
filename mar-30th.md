@@ -3,8 +3,12 @@
 ### Disk Scheduling Policies
 #### First in, first out
 - Process requests sequentially
-- Fiar to all processes
-- Approaches random scheduling in performance if there are many proceses
+- Fair to all processes
+- Approaches random scheduling in performance if there are many processes
+- **Pros**:
+    - Easy to implement
+- **Cons**:
+    - Slow
 
 #### Priority based scheduling
 - Goal is not to optimize disk but meet other objects
