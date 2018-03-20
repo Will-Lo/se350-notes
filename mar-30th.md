@@ -38,8 +38,9 @@
     - Deterministic
     - Reduces delay for new requests
     - Good for real-time systems
-
+- **Cons**:
+    - Slower than SCAN
 #### N-step-SCAN
 - Optimizes SCAN and C-SCAN
 - Segments disk request queue into subqueues of length N
-- 
+- Processes subqueues using SCAN
