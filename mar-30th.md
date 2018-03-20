@@ -104,6 +104,10 @@
     - Close
     - Write
 
+
 - **Field**: basic single value element of data
 - **Record**: Collection of fields
+- **File**: Collection of similar records, single entity
+- **Database**: Collection of related data with relationship among elements
+
 
