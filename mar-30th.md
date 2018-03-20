@@ -49,3 +49,8 @@
 - Optimizes SCAN
 - Segments disk request queue into subqueues of length N
 - Processes subqueues using SCAN
+
+
+### RAID (Redundant Array of Independent Disks)
+- Organize data which redundancy can be added to improve reliability
+- Allows for recovery 
