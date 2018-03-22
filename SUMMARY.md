@@ -14,5 +14,6 @@
 * [Mar 6th](/notes/mar6-18.md)
 * [Mar 8th](/notes/mar8-18.md)
 * [Mar 13th](/notes/mar13-18.md)
-* [Mar 20th](mar-30th.md)
+* [Mar 20th](/notes/mar20-18.md)
+* [Mar 22nd](/notes/mar22-18.md)
 
